@@ -13,7 +13,7 @@ public:
     Stack();
     ~Stack();
 
-    void push(Card card);
+    void push(Card c);
     Card pop();
     Card peek();
     bool isEmpty();

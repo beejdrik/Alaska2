@@ -20,9 +20,9 @@ Stack::~Stack() {
     }
 }
 
-void Stack::push(Card card) {
+void Stack::push(Card c) {
     Node* newNode = new Node;
-    newNode->data = card;
+    newNode->data = c;
     newNode->next = top;
     top = newNode;
 }
