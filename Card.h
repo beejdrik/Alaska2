@@ -1,13 +1,10 @@
 //
 // Created by Owner on 2/10/2026.
 //
-
-#ifndef CARD_H
-#define CARD_H
+#pragma once
 
 struct Card {
   char rank;
   char suit;
 };
 
-#endif //CARD_H
