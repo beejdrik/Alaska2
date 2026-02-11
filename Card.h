@@ -6,7 +6,7 @@
 enum class Suit {
     Spades,         //"Spades" represents the number 0...
     Clubs,          //1
-    Diamonds,        //2
+    Diamonds,       //2
     Hearts,         //3
 };
 
@@ -17,9 +17,11 @@ enum class Rank {  // Same system functioning here^
 };
 
 class Card {
+private:
 Suit suit;
 Rank rank;
-    public:
+
+public:
     Card();
     Card(Suit s, Rank r);
     ~Card();
