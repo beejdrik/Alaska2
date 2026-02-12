@@ -10,7 +10,6 @@ Card::Card(Suit s, Rank r) {
     suit = s;
     rank = r;
 }
-Card::Card(){};
 
 Card::~Card() {}
 
@@ -22,7 +21,7 @@ Rank Card::getRank() {
     return rank;
 }
 
-void Card::Display() {
+void Card::display() {
     if (rank == Rank::Ace) cout << "A";
     else if (rank == Rank::Two) cout << "2";
     else if (rank == Rank::Three) cout << "3";

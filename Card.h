@@ -4,10 +4,10 @@
 #pragma once
 
 enum class Suit {
-    Spades,         //"Spades" represents the number 0...
-    Clubs,          //1
-    Diamonds,       //2
-    Hearts,         //3
+    Spades = 1,         //"Spades" represents the number 1...
+    Clubs = 2,          //2
+    Diamonds = 3,       //3
+    Hearts = 4,         //4
 };
 
 enum class Rank {  // Same system functioning here^
@@ -22,12 +22,12 @@ Suit suit;
 Rank rank;
 
 public:
-    Card();
+    Card() = default;
     Card(Suit s, Rank r);
     ~Card();
 
     Suit getSuit();
     Rank getRank();
-    void Display();
+    void display();
 
 };

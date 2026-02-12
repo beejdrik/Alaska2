@@ -3,8 +3,12 @@
 //
 using namespace std;
 #include <iostream>
+#include "Deck.h"
 
 int main(){
   std::cout << "Hello World!\n";
+
+  Deck deck;
+  deck.print();
   return 0;
 }
