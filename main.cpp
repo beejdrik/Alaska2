@@ -3,10 +3,14 @@
 //
 #include <iostream>
 #include "Deck.h"
+#include "stack.h"
 
 int main(){
 
-  Deck deck;
-  deck.print();
-  return 0;
+
+    Deck deck;
+    Stack stack;
+    stack.pop();
+    stack.peek();
+return 0;
 }

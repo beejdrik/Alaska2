@@ -5,6 +5,8 @@
 #include "Deck.h"
 #include <iostream>
 #include <ostream>
+#include <cstdlib>
+#include <ctime>
 
 Deck::Deck() {
     int i = 0;
@@ -34,7 +36,18 @@ Card Deck::deal() {
 }
 
 void Deck::shuffle() {
+    srand(time(nullptr));
 
+    for (int i = 0; i <= 1000; i++) {
+        int a = rand() % 52;            //a and b are random numbers between 0-51
+        int b = rand() % 52;
+
+        Card current = deckOfCards[a];
+        deckOfCards[a] = deckOfCards[b];
+        deckOfCards[b] = current;
+    }
+
+    top = 51;
 }
 
 

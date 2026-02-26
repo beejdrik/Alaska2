@@ -28,21 +28,22 @@ void Stack::push(Card c) {
     top = newNode;
 }
 
-Card Stack::pop() {
+void Stack::pop() {
     if (isEmpty()) {
         std::cout << "Stack is empty." << std::endl;
+        return;
     }
     Node* current = top;
-    Card data = current->data;
+    top = top->next;
     delete current;
-    return data;
 }
 
-Card Stack::peek() {
+void Stack::peek() {
     if (isEmpty()) {
         std::cout << "Stack is empty." << std::endl;
+        return;
     }
-    return top->data;
+    return top->data.display();
 }
 
 bool Stack::isEmpty() {

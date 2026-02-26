@@ -16,7 +16,7 @@ class Deck {
     Deck();
     ~Deck();
 
-  static void shuffle();
+    void shuffle();
     Card deal();
     void print() const;
 

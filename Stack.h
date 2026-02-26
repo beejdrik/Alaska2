@@ -14,7 +14,8 @@ public:
     ~Stack();
 
     void push(Card c);
-    Card pop();
-    Card peek();
+    void pop();
+
+    void peek();
     bool isEmpty();
 };
