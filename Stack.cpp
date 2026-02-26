@@ -13,11 +13,12 @@ Stack::Stack() {
 
 Stack::~Stack() {
     Node* current = top;
-    while (top != nullptr) {
-        Node* next = top->next;
-        top -> next = nullptr;
-        delete top;
+    while (current != nullptr) {
+        Node* next = current->next;
+        delete current;
+        current = next;
     }
+    top = nullptr;
 }
 
 void Stack::push(Card c) {

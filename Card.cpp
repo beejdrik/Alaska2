@@ -6,22 +6,22 @@
 using namespace std;
 
 
-Card::Card(Suit s, Rank r) {
+Card::Card(const Suit s, const Rank r) {
     suit = s;
     rank = r;
 }
 
-Card::~Card() {}
+Card::~Card() = default;
 
-Suit Card::getSuit() {
+Suit Card::getSuit() const {
     return suit;
 }
 
-Rank Card::getRank() {
+Rank Card::getRank() const {
     return rank;
 }
 
-void Card::display() {
+void Card::display() const {
     if (rank == Rank::Ace) cout << "A";
     else if (rank == Rank::Two) cout << "2";
     else if (rank == Rank::Three) cout << "3";

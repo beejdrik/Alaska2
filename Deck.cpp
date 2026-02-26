@@ -3,7 +3,6 @@
 //
 
 #include "Deck.h"
-using namespace std;
 #include <iostream>
 #include <ostream>
 
@@ -18,13 +17,11 @@ Deck::Deck() {
     top = 51;
 }
 
-Deck::~Deck() {
-
-}
+Deck::~Deck() = default;
 
 
-void Deck::print() {
-    cout << "Deck contents (top to bottom):" << endl;
+void Deck::print() const {
+    std::cout << "Deck contents (top to bottom):" << std::endl;
     for (int i = top; i >= 0; i--) {
         deckOfCards[i].display();
     }
@@ -35,5 +32,10 @@ void Deck::print() {
 Card Deck::deal() {
     return deckOfCards[top--];
 }
+
+void Deck::shuffle() {
+
+}
+
 
 

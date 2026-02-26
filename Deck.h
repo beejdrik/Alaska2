@@ -16,10 +16,9 @@ class Deck {
     Deck();
     ~Deck();
 
-    void shuffle();
+  static void shuffle();
     Card deal();
-    void print();
-    bool isEmpty();
+    void print() const;
 
 
 };

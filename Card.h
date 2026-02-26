@@ -26,8 +26,8 @@ public:
     Card(Suit s, Rank r);
     ~Card();
 
-    Suit getSuit();
-    Rank getRank();
-    void display();
+    Suit getSuit() const;
+    Rank getRank() const;
+    void display() const;
 
 };
