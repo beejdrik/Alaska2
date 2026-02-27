@@ -21,6 +21,14 @@ Stack::~Stack() {
     top = nullptr;
 }
 
+Card Stack::getAt(int index) {
+    Node* current = top;
+    for (int i = 0; i < index; i++) {
+        current = current->next;
+    }
+    return current->data;
+}
+
 void Stack::push(Card c) {
     Node* newNode = new Node;
     newNode->data = c;

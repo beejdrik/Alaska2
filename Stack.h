@@ -13,6 +13,9 @@ public:
     Stack();
     ~Stack();
 
+    Card getAt(int index);
+
+
     void push(Card c);
     void pop();
     void peek();

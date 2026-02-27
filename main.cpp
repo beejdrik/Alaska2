@@ -8,7 +8,14 @@
 
 int main(){
 
-GameState gameState;
+Stack stack;
+    Deck deck;
+    stack.push(deck.deal());
+    stack.push(deck.deal());
+    stack.push(deck.deal());
+    stack.getAt(0).display();
+    stack.getAt(1).display();
+    stack.getAt(2).display();
 
 
 return 0;
