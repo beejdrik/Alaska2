@@ -12,9 +12,6 @@ GameState::~GameState() = default;
 
 void GameState::deal(Deck& deck) {
    tableau[0].push(deck.deal());
-   for (int i = 0; i < 5; i++) {
-     tableau[i].push(deck.deal());
-   }
    for (int i = 0; i < 6; i++) {
      tableau[1].push(deck.deal());
    }
@@ -32,9 +29,6 @@ void GameState::deal(Deck& deck) {
    }
    for (int i = 0; i < 11; i++) {
      tableau[6].push(deck.deal());
-   }
-   for (int i = 0; i < 12; i++) {
-     tableau[7].push(deck.deal());
    }
 }
 
@@ -69,10 +63,27 @@ void GameState::printSuitPiles() {
   }
 }
 
-void printTableau() {
+void GameState::printTableau() {
+  for (int row = 0; row < 20; row++) {
+    for (int col = 0; col < 7; col++) {
+      if (row < tableau[col].getSize()) {
+        std::cout << std::setw(6);
+        tableau[col].getAt(row).display();
+      } else {
+        std::cout << std::setw(6) << " ";
+      }
+    }
+    std::cout << std::endl;
+  }
+}
+
+void GameState::printMoves() {
 
 }
 
-void printMoves() {
-
+void GameState::display() {
+  std::cout << "MOUSAAB AND BRENT'S MAGNIFICENT ALASKAN SOLITAIRE" << std::endl;
+  //printSuitPiles();
+  printTableau();
+  printMoves();
 }

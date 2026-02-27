@@ -3,6 +3,7 @@
 //
 #pragma once
 #include "Deck.h"
+#include <iomanip>
 #include <iostream>
 #include "Stack.h"
 
@@ -21,12 +22,7 @@ private:
     ~GameState();
 
     void deal(Deck& deck);
-    void GameState::display() {
-        std::cout << "MOUSAAB AND BRENT'S MAGNIFICENT ALASKAN SOLITAIRE" << std::endl;
-        printSuitPiles();
-        printTableau();
-        printMoves();
-    }
+    void display();
     bool victory();
     bool defeat();
     void getInput();

@@ -8,9 +8,9 @@
 
 int main(){
 
-Stack stack;
-    Deck deck;
-    std::cout << stack.getSize() << std::endl;
+    GameState game;
+    game.display();
+
 
 
 

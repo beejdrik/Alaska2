@@ -17,7 +17,7 @@ public:
     int getSize();
 
 
-    void push(Card c);
+    void push(const Card &c);
     void pop();
     void peek();
     void displayAll();

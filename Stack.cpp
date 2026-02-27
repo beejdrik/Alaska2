@@ -43,7 +43,7 @@ int Stack::getSize() {
 
 }
 
-void Stack::push(Card c) {
+void Stack::push(const Card &c) {
     Node* newNode = new Node;
     newNode->data = c;
     newNode->next = top;
