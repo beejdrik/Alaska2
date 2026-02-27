@@ -1,0 +1,3 @@
+D:/schoolwork/Winter2025/csc275/Alaska2/cmake-build-debug/CMakeFiles/Alaska2.dir
+D:/schoolwork/Winter2025/csc275/Alaska2/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/schoolwork/Winter2025/csc275/Alaska2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

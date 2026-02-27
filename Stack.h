@@ -15,7 +15,7 @@ public:
 
     void push(Card c);
     void pop();
-
     void peek();
+    void displayAll();
     bool isEmpty();
 };

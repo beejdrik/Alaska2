@@ -8,9 +8,6 @@
 int main(){
 
 
-    Deck deck;
-    Stack stack;
-    stack.pop();
-    stack.peek();
+
 return 0;
 }

@@ -46,6 +46,15 @@ void Stack::peek() {
     return top->data.display();
 }
 
+void Stack::displayAll() {
+    if (isEmpty()) {std::cout << "O" << std::endl;}
+    Node* current = top;
+    while (current != nullptr) {
+        current->data.display();
+        current = current->next;
+    }
+}
+
 bool Stack::isEmpty() {
     if (top == nullptr) {
         return true;
