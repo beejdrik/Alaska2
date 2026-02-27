@@ -8,7 +8,9 @@ add_executable(Alaska2
         Stack.cpp
         Card.cpp
         Deck.cpp
+        GameState.cpp
         Card.h
         Stack.h
         Deck.h
+        GameState.h
 )

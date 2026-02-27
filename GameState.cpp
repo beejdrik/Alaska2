@@ -1,7 +1,6 @@
 //
 // Created by Owner on 2/26/2026.
 //
-
 #include "GameState.h"
 
 GameState::GameState() {
@@ -39,6 +38,41 @@ void GameState::deal(Deck& deck) {
    }
 }
 
-void GameState::display() {
+void GameState::printSuitPiles() {
+
+  std::cout << "Spades" << std::endl;
+  if (suitPiles[0].isEmpty()) {
+    std::cout << "O" << std::endl;
+  } else {
+    suitPiles[0].getAt(0).display();
+  }
+
+  std::cout << "Clubs" << std::endl;
+  if (suitPiles[1].isEmpty()) {
+    std::cout << "O" << std::endl;
+  } else {
+    suitPiles[1].getAt(0).display();
+  }
+
+  std::cout << "Diamonds" << std::endl;
+  if (suitPiles[2].isEmpty()) {
+    std::cout << "O" << std::endl;
+  } else {
+    suitPiles[2].getAt(0).display();
+  }
+
+  std::cout << "Hearts" << std::endl;
+  if (suitPiles[3].isEmpty()) {
+    std::cout << "O" << std::endl;
+  } else {
+    suitPiles[3].getAt(0).display();
+  }
+}
+
+void printTableau() {
+
+}
+
+void printMoves() {
 
 }

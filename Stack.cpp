@@ -23,6 +23,9 @@ Stack::~Stack() {
 
 Card Stack::getAt(int index) {
     Node* current = top;
+    if (current == nullptr) {
+        return {};
+    }
     for (int i = 0; i < index; i++) {
         current = current->next;
     }
