@@ -14,7 +14,8 @@ private:
   public:
     GameState();
     ~GameState();
-    void play();
+
+    void deal(Deck& deck);
     void display();
     bool victory();
     bool defeat();

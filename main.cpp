@@ -4,9 +4,11 @@
 #include <iostream>
 #include "Deck.h"
 #include "stack.h"
+#include "GameState.h"
 
 int main(){
 
+GameState gameState;
 
 
 return 0;
