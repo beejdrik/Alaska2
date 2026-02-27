@@ -29,6 +29,17 @@ Card Stack::getAt(int index) {
     return current->data;
 }
 
+int Stack::getSize() {
+    int size = 0;
+    Node* current = top;
+    while (current != nullptr) {
+        size++;
+        current = current->next;
+    }
+    return size;
+
+}
+
 void Stack::push(Card c) {
     Node* newNode = new Node;
     newNode->data = c;

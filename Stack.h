@@ -14,6 +14,7 @@ public:
     ~Stack();
 
     Card getAt(int index);
+    int getSize();
 
 
     void push(Card c);
