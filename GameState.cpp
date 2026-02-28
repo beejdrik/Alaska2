@@ -38,28 +38,28 @@ void GameState::printSuitPiles() {
   if (suitPiles[0].isEmpty()) {
     std::cout << "O" << std::endl;
   } else {
-    suitPiles[0].getAt(0).display();
+    suitPiles[0].getDataAtDepth(0).display();
   }
 
   std::cout << "Clubs" << std::endl;
   if (suitPiles[1].isEmpty()) {
     std::cout << "O" << std::endl;
   } else {
-    suitPiles[1].getAt(0).display();
+    suitPiles[1].getDataAtDepth(0).display();
   }
 
   std::cout << "Diamonds" << std::endl;
   if (suitPiles[2].isEmpty()) {
     std::cout << "O" << std::endl;
   } else {
-    suitPiles[2].getAt(0).display();
+    suitPiles[2].getDataAtDepth(0).display();
   }
 
   std::cout << "Hearts" << std::endl;
   if (suitPiles[3].isEmpty()) {
     std::cout << "O" << std::endl;
   } else {
-    suitPiles[3].getAt(0).display();
+    suitPiles[3].getDataAtDepth(0).display();
   }
 }
 
@@ -68,7 +68,7 @@ void GameState::printTableau() {
     for (int j = 0; j < 7; j++) {
       if (i < tableau[j].getSize()) {
         std::cout << std::setw(6);
-        tableau[j].getAt(i).display();
+        tableau[j].getDataAtDepth(i).display();
       } else {
         std::cout << std::setw(7) << " ";
       }

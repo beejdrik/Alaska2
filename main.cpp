@@ -7,10 +7,8 @@
 #include "GameState.h"
 
 int main(){
-
     GameState game;
     game.display();
-
 
 
     return 0;

@@ -13,7 +13,7 @@ public:
     Stack();
     ~Stack();
 
-    Card getAt(int index);
+    Card getDataAtDepth(int index);
     int getSize();
 
 

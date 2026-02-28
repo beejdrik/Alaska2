@@ -21,7 +21,7 @@ Stack::~Stack() {
     top = nullptr;
 }
 
-Card Stack::getAt(int index) {
+Card Stack::getDataAtDepth(int index) {     //takes index and returns data at that depth in a stack
     Node* current = top;
     if (current == nullptr) {
         return {};
@@ -32,7 +32,7 @@ Card Stack::getAt(int index) {
     return current->data;
 }
 
-int Stack::getSize() {
+int Stack::getSize() {                      //Counts the number of entries into a stack and returns it as size
     int size = 0;
     Node* current = top;
     while (current != nullptr) {
@@ -65,7 +65,7 @@ Card Stack::peek() {
         std::cout << "Stack is empty." << std::endl;
         return {};
     }
-    return top->data;
+    return top->data;       //returns top Card
 }
 
 void Stack::displayAll() {
