@@ -64,13 +64,13 @@ void GameState::printSuitPiles() {
 }
 
 void GameState::printTableau() {
-  for (int row = 0; row < 20; row++) {
-    for (int col = 0; col < 7; col++) {
-      if (row < tableau[col].getSize()) {
+  for (int i = 0; i < 20; i++) {
+    for (int j = 0; j < 7; j++) {
+      if (i < tableau[j].getSize()) {
         std::cout << std::setw(6);
-        tableau[col].getAt(row).display();
+        tableau[j].getAt(i).display();
       } else {
-        std::cout << std::setw(6) << " ";
+        std::cout << std::setw(6) << "";
       }
     }
     std::cout << std::endl;
@@ -83,7 +83,7 @@ void GameState::printMoves() {
 
 void GameState::display() {
   std::cout << "MOUSAAB AND BRENT'S MAGNIFICENT ALASKAN SOLITAIRE" << std::endl;
-  //printSuitPiles();
+  printSuitPiles();
   printTableau();
   printMoves();
 }
