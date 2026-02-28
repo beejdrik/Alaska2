@@ -60,12 +60,12 @@ void Stack::pop() {
     delete current;
 }
 
-void Stack::peek() {
+Card Stack::peek() {
     if (isEmpty()) {
         std::cout << "Stack is empty." << std::endl;
-        return;
+        return {};
     }
-    return top->data.display();
+    return top->data;
 }
 
 void Stack::displayAll() {

@@ -16,6 +16,8 @@ private:
     void printSuitPiles();
     void printTableau();
     void printMoves();
+    void moveToSuitPile();
+    void moveInTableau();
 
   public:
     GameState();
@@ -23,9 +25,9 @@ private:
 
     void deal(Deck& deck);
     void display();
+  void getInput();
     bool victory();
     bool defeat();
-    void getInput();
     void displayResult();
 
 

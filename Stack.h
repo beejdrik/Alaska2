@@ -19,7 +19,7 @@ public:
 
     void push(const Card &c);
     void pop();
-    void peek();
+    Card peek();
     void displayAll();
     bool isEmpty();
 };
